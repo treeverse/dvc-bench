@@ -16,7 +16,7 @@ repos:
     - id: sort-simple-yaml
     - id: trailing-whitespace
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: 'v0.14.1'
+  rev: 'v0.14.3'
   hooks:
     - id: ruff-check
       args: [--fix, --exit-non-zero-on-fix]
@@ -34,4 +34,4 @@ repos:
       additional_dependencies: ["setuptools"]
       language_version: python3
   repo: https://github.com/lovesegfault/beautysh
-  rev: v6.2.1
+  rev: v6.4.1
