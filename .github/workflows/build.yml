@@ -220,10 +220,10 @@ jobs:
         working-directory: dvc/
         run: >
           bencher run --adapter python_pytest --file .benchmarks/${{ matrix.test.name }}.json
+          --project "dvc-bench" --testbed "${{ matrix.os }}" --github-actions "${{ secrets.GITHUB_TOKEN }}"
           "pytest -Wignore --benchmark-json .benchmarks/${{ matrix.test.name }}.json --benchmark-group-by func
           --dvc-revs ${REVS} --dataset ${DATASET} --dvc-bench-repo ../dvc-bench --dvc-repo $(pwd) ${{ env.CPROFILE_ARGS }}
           ${{ matrix.test.path }}"
-          --project "dvc-bench" --testbed "${{ matrix.os }}" --github-actions "${{ secrets.GITHUB_TOKEN }}"
         env:
           BENCHER_API_TOKEN: ${{ secrets.BENCHER_API_TOKEN }}
       - if: ${{ steps.restore-cache.outputs.cache-hit != 'true' && matrix.test.name == 'test_add_copy' }}
