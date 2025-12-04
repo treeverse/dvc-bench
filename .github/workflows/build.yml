@@ -219,6 +219,7 @@ jobs:
         shell: bash
         working-directory: dvc/
         run: >
+          mkdir .benchmarks &&
           bencher run --adapter python_pytest --file .benchmarks/${{ matrix.test.name }}.json
           --project "dvc-bench" --testbed "${{ matrix.os }}" --github-actions "${{ secrets.GITHUB_TOKEN }}"
           "pytest -Wignore --benchmark-json .benchmarks/${{ matrix.test.name }}.json --benchmark-group-by func
