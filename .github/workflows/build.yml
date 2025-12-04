@@ -169,6 +169,8 @@ jobs:
         run: echo "s3-tests=$(../scripts/ci/list_tests.sh dvc_s3/tests/benchmarks.py '${{ env.TESTS_TO_RUN }}')" >> $GITHUB_OUTPUT
 
   build:
+    permissions:
+      checks: write
     needs: [gen, build-wheels]
     timeout-minutes: 180
     name: run ${{ matrix.test.name }}
@@ -212,17 +214,18 @@ jobs:
       - run: |
           echo "UV_FIND_LINKS=$(realpath wheelhouse)" >> $GITHUB_ENV
           echo "PIP_FIND_LINKS=$(realpath wheelhouse)" >> $GITHUB_ENV
+      - uses: bencherdev/bencher@main
       - name: run benchmarks
         shell: bash
         working-directory: dvc/
         run: >
-          pytest --benchmark-save ${{ matrix.test.name }} --benchmark-group-by func
-          ${{ matrix.test.path }}
-          --dvc-revs ${REVS}
-          --dataset ${DATASET}
-          --dvc-bench-repo ../dvc-bench --dvc-repo $(pwd)
-          -W ignore
-          ${{ env.CPROFILE_ARGS }}
+          bencher run --adapter python_pytest --file .benchmarks/${{ matrix.test.name }}.json
+          "pytest -Wignore --benchmark-json .benchmarks/${{ matrix.test.name }}.json --benchmark-group-by func
+          --dvc-revs ${REVS} --dataset ${DATASET} --dvc-bench-repo ../dvc-bench --dvc-repo $(pwd) ${{ env.CPROFILE_ARGS }}
+          ${{ matrix.test.path }}"
+          --project "dvc-bench" --testbed "${{ matrix.os }}" --github-actions "${{ secrets.GITHUB_TOKEN }}"
+        env:
+          BENCHER_API_TOKEN: ${{ secrets.BENCHER_API_TOKEN }}
       - if: ${{ steps.restore-cache.outputs.cache-hit != 'true' && matrix.test.name == 'test_add_copy' }}
         uses: actions/cache/save@v4
         with:
