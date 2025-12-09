@@ -219,13 +219,13 @@ jobs:
         shell: bash
         working-directory: dvc/
         run: >
-          mkdir .benchmarks &&
-          bencher run --adapter python_pytest --file .benchmarks/${{ matrix.test.name }}.json
-          --project "dvc-bench" --testbed "${{ matrix.os }}" --github-actions "${{ secrets.GITHUB_TOKEN }}"
-          "pytest ${{ matrix.test.path }} -Wignore --benchmark-json .benchmarks/${{ matrix.test.name }}.json --benchmark-group-by func
-          --dvc-revs ${REVS} --dataset ${DATASET} --dvc-bench-repo ../dvc-bench --dvc-repo $(pwd) ${{ env.CPROFILE_ARGS }}"
-        env:
-          BENCHER_API_TOKEN: ${{ secrets.BENCHER_API_TOKEN }}
+          pytest --benchmark-save ${{ matrix.test.name }} --benchmark-group-by func
+          ${{ matrix.test.path }}
+          --dvc-revs ${REVS}
+          --dataset ${DATASET}
+          --dvc-bench-repo ../dvc-bench --dvc-repo $(pwd)
+          -W ignore
+          ${{ env.CPROFILE_ARGS }}
       - if: ${{ steps.restore-cache.outputs.cache-hit != 'true' && matrix.test.name == 'test_add_copy' }}
         uses: actions/cache/save@v4
         with:
