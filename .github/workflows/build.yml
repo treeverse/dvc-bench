@@ -214,7 +214,6 @@ jobs:
       - run: |
           echo "UV_FIND_LINKS=$(realpath wheelhouse)" >> $GITHUB_ENV
           echo "PIP_FIND_LINKS=$(realpath wheelhouse)" >> $GITHUB_ENV
-      - uses: bencherdev/bencher@main
       - name: run benchmarks
         shell: bash
         working-directory: dvc/
