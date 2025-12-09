@@ -262,7 +262,7 @@ jobs:
         if: ${{ github.event_name == 'schedule' }}
         uses: aws-actions/configure-aws-credentials@v5
         with:
-          role-to-assume: arn:aws:iam::342840881361:role/dvc-bench-gha
+          role-to-assume: arn:aws:iam::977611293394:role/dvc-bench-gha
           role-duration-seconds: 28800
           aws-region: us-east-1
       - uses: actions/setup-python@v6
