@@ -299,7 +299,7 @@ jobs:
       - name: configure real S3 DVC env
         if: ${{ github.event_name == 'schedule' }}
         run: |
-          echo "DVC_TEST_AWS_REPO_BUCKET=dvc-bench-ci" >> "$GITHUB_ENV"
+          echo "DVC_TEST_AWS_REPO_BUCKET=dvc-bench-test" >> "$GITHUB_ENV"
       - uses: actions/cache/restore@v4
         with:
           path: wheelhouse
