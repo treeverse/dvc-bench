@@ -385,7 +385,7 @@ jobs:
         if: ${{ github.event_name == 'schedule' }}
         id: set-conn-str
         run: |
-          connection_string=$(az storage account show-connection-string -g dvc-bench-ci -n dvcbenchci | jq -c '.connectionString')
+          connection_string=$(az storage account show-connection-string -g dvc-bench -n dvcbenchtest | jq -c '.connectionString')
           echo "::add-mask::$connection_string"
           echo "DVC_TEST_AZURE_CONNECTION_STRING=$connection_string" >> $GITHUB_ENV
       - name: install requirements
