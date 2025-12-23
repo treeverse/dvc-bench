@@ -81,7 +81,7 @@ jobs:
           python-version: "3.14"
       - name: Cache Wheels
         id: cache-wheels
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: wheelhouse
           key: ${{ runner.os }}-wheels-v1
@@ -201,12 +201,12 @@ jobs:
           cache-dependency-glob: dvc/pyproject.toml
       - name: install requirements
         run: uv pip install "./dvc[tests]"
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         id: restore-cache
         with:
           path: dvc-bench/.dvc/cache
           key: ${{ env.DATASET }}
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         with:
           path: wheelhouse
           key: ${{ runner.os }}-wheels-v1
@@ -226,7 +226,7 @@ jobs:
           -W ignore
           ${{ env.CPROFILE_ARGS }}
       - if: ${{ steps.restore-cache.outputs.cache-hit != 'true' && matrix.test.name == 'test_add_copy' }}
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: dvc-bench/.dvc/cache
           key: ${{ steps.restore-cache.outputs.cache-primary-key }}
@@ -291,7 +291,7 @@ jobs:
             dvc-s3/pyproject.toml
       - name: install requirements
         run: uv pip install "./dvc[tests]" "./dvc-s3[tests]"
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         with:
           path: dvc-bench/.dvc/cache
           key: ${{ env.DATASET }}
@@ -299,7 +299,7 @@ jobs:
         if: ${{ github.event_name == 'schedule' }}
         run: |
           echo "DVC_TEST_AWS_REPO_BUCKET=dvc-bench-test" >> "$GITHUB_ENV"
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         with:
           path: wheelhouse
           key: ${{ runner.os }}-wheels-v1
@@ -389,7 +389,7 @@ jobs:
           echo "DVC_TEST_AZURE_CONNECTION_STRING=$connection_string" >> $GITHUB_ENV
       - name: install requirements
         run: uv pip install "./dvc[tests]" "./dvc-azure[tests]"
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         with:
           path: dvc-bench/.dvc/cache
           key: ${{ env.DATASET }}
@@ -397,7 +397,7 @@ jobs:
         if: ${{ github.event_name == 'schedule' }}
         run: |
           echo "DVC_TEST_AZURE_PATH=az://dvc-bench-ci" >> $GITHUB_ENV
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         with:
           path: wheelhouse
           key: ${{ runner.os }}-wheels-v1
@@ -473,7 +473,7 @@ jobs:
             dvc-gs/pyproject.toml
       - name: install reqs
         run: uv pip install "./dvc[tests]" "./dvc-gs[tests]"
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         with:
           path: dvc-bench/.dvc/cache
           key: ${{ env.DATASET }}
@@ -488,7 +488,7 @@ jobs:
         if: ${{ github.event_name == 'schedule' }}
         run: |
           echo "DVC_TEST_GS_BUCKET=dvc-bench" >> "$GITHUB_ENV"
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         with:
           path: wheelhouse
           key: ${{ runner.os }}-wheels-v1
