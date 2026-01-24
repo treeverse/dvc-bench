@@ -55,6 +55,12 @@ env:
   FORCE_COLOR: "1"
   DATASET: ${{ (github.event_name == 'schedule' && 'mnist') || github.event.inputs.dataset || 'small' }}
   REVS: ${{ github.event.inputs.revs || 'main,3.60.1,3.53.2,3.10.0,2.58.2' }}
+  PER_TEST_ADDITIONAL_DEFAULT_REVS: |
+    {
+      "test_add_copy": "1.11.16,2.10.0",
+      "test_add_symlink": "1.11.16,2.10.0",
+      "test_add_hardlink": "1.11.16,2.10.0"
+    }
   # run on small set of revisions for clouds
   CLOUD_REVS: ${{ github.event.inputs.revs || 'main,3.53.2' }}
   DVC_REPOSITORY: iterative/dvc
@@ -193,7 +199,17 @@ jobs:
           ref: ${{ env.DVC_REF }}
           path: dvc
           fetch-depth: 0
-      - run: ../dvc-bench/scripts/ci/fetch-all-revs.sh "${REVS}"
+      - name: compute effective revs
+        run: |
+          EFFECTIVE_REVS="${REVS}"
+          if [ -z "${{ github.event.inputs.revs }}" ]; then
+            ADDITIONAL=$(echo '${{ env.PER_TEST_ADDITIONAL_DEFAULT_REVS }}' | jq -r '.["${{ matrix.test.name }}"] // ""')
+            if [ -n "$ADDITIONAL" ]; then
+              EFFECTIVE_REVS="${EFFECTIVE_REVS},${ADDITIONAL}"
+            fi
+          fi
+          echo "EFFECTIVE_REVS=${EFFECTIVE_REVS}" >> $GITHUB_ENV
+      - run: ../dvc-bench/scripts/ci/fetch-all-revs.sh "${EFFECTIVE_REVS}"
         working-directory: dvc
       - uses: astral-sh/setup-uv@v7
         with:
@@ -220,7 +236,7 @@ jobs:
         run: >
           pytest --benchmark-save ${{ matrix.test.name }} --benchmark-group-by func
           ${{ matrix.test.path }}
-          --dvc-revs ${REVS}
+          --dvc-revs ${EFFECTIVE_REVS}
           --dataset ${DATASET}
           --dvc-bench-repo ../dvc-bench --dvc-repo $(pwd)
           -W ignore
