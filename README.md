@@ -1,13 +1,13 @@
 ## dvc-bench
-Benchmarking [dvc](https://github.com/iterative/dvc) with pytest-benchmark.
+Benchmarking [dvc](https://github.com/treeverse/dvc) with pytest-benchmark.
 
 ### Daily benchmark results
 
-Visit [bench.dvc.org](http://bench.dvc.org/)
+Visit [bench.dvc.org](https://treeverse.github.io/dvc-bench/)
 
 ### Dispatch workflow
 
-Trigger a [dispatch workflow](https://github.com/iterative/dvc-bench/actions/workflows/build.yml) with desired dataset and revisions and see results in [bench.dvc.org/run_ID_ATTEMPT.html](http://bench.dvc.org), where `ID` is `github.run_id` and `ATTEMPT` is `github.run_attempt`. For example, for https://github.com/iterative/dvc-bench/actions/runs/7119039172/attempts/2 it would be http://bench.dvc.org/run_7119039172_2.html
+Trigger a [dispatch workflow](https://github.com/treeverse/dvc-bench/actions/workflows/build.yml) with desired dataset and revisions and see results in [bench.dvc.org/run_ID_ATTEMPT.html](https://treeverse.github.io/dvc-bench/), where `ID` is `github.run_id` and `ATTEMPT` is `github.run_attempt`. For example, for https://github.com/iterative/dvc-bench/actions/runs/7119039172/attempts/2 it would be http://bench.dvc.org/run_7119039172_2.html
 
 ### Setting up
 ```
@@ -60,4 +60,4 @@ $ dvc plots show
 
 ### Contributing
 
-Benchmark test definitions are now part of [dvc.testing](https://github.com/iterative/dvc/tree/main/dvc/testing).
+Benchmark test definitions are now part of [dvc.testing](https://github.com/treeverse/dvc/tree/main/dvc/testing).
