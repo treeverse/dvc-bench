@@ -3,7 +3,7 @@ Benchmarking [dvc](https://github.com/treeverse/dvc) with pytest-benchmark.
 
 ### Daily benchmark results
 
-Visit [bench.dvc.org](https://treeverse.github.io/dvc-bench/)
+Visit https://treeverse.github.io/dvc-bench/.
 
 ### Dispatch workflow
 
