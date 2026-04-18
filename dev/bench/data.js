@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776388204460,
+  "lastUpdate": 1776476402975,
   "repoUrl": "https://github.com/treeverse/dvc-bench",
   "entries": {
     "Benchmark": [
@@ -17549,6 +17549,2457 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0",
             "extra": "mean: 12.657545520999975 sec\nrounds: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "skshetry",
+            "username": "skshetry",
+            "email": "18718008+skshetry@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "32ddb96f552cf06846ebd79ad452fcf0d9c23145",
+          "message": "Update link formatting in README.md",
+          "timestamp": "2026-04-09T15:04:06Z",
+          "url": "https://github.com/treeverse/dvc-bench/commit/32ddb96f552cf06846ebd79ad452fcf0d9c23145"
+        },
+        "date": 1776476402660,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add[main]",
+            "value": 0.04298463836301663,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 23.264125001000025 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add-noop[main]",
+            "value": 0.24429570261181244,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.093399880999982 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add[3.60.1]",
+            "value": 0.04480725558168632,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 22.31781409100006 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add-noop[3.60.1]",
+            "value": 0.25181832592762615,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.9711168610000414 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add[3.53.2]",
+            "value": 0.013272828202187097,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 75.34189283299997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add-noop[3.53.2]",
+            "value": 0.038015928707202135,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 26.30476313500003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add[3.10.0]",
+            "value": 0.011880441002811172,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 84.17195958999991 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add-noop[3.10.0]",
+            "value": 0.03625997100655119,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 27.578621058999943 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add[2.58.2]",
+            "value": 0.011985976776722869,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 83.430830764 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_copy-add-noop[2.58.2]",
+            "value": 0.036210354353441845,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 27.61641021899993 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add[main]",
+            "value": 0.08034557176121664,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 12.446236650999936 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add-noop[main]",
+            "value": 0.263856841720076,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.789933941000072 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add[3.60.1]",
+            "value": 0.08689983172712247,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 11.50750214499999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add-noop[3.60.1]",
+            "value": 0.27645971889945115,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.6171634840000024 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add[3.53.2]",
+            "value": 0.023876038796027784,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 41.88299443400001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add-noop[3.53.2]",
+            "value": 0.04546564745887083,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 21.994627941999966 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add[3.10.0]",
+            "value": 0.02207378083952057,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 45.302615228000036 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add-noop[3.10.0]",
+            "value": 0.043321823281284144,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 23.083054318999984 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add[2.58.2]",
+            "value": 0.02210980498119412,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 45.22880237300001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_hardlink-add-noop[2.58.2]",
+            "value": 0.0441240072710254,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 22.663399401999982 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add[main]",
+            "value": 0.040140096861702515,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 24.912745064999967 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add-noop[main]",
+            "value": 0.22059744298272418,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.5331441130000485 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add[3.60.1]",
+            "value": 0.04154228436952437,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 24.071858713999973 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add-noop[3.60.1]",
+            "value": 0.2317061919700646,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.315810430000056 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add[3.53.2]",
+            "value": 0.020417097690169923,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 48.97855783300008 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add-noop[3.53.2]",
+            "value": 0.030026775742502346,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 33.30360903799999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add[3.10.0]",
+            "value": 0.01873522229833244,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 53.37540084 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add-noop[3.10.0]",
+            "value": 0.027258863215162955,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 36.685315601999946 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add[2.58.2]",
+            "value": 0.019131687536322148,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 52.26930442499997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_add.py::test_add_symlink-add-noop[2.58.2]",
+            "value": 0.02772646566470525,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 36.066623567999955 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout[main]",
+            "value": 0.04968885165314556,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 20.125238695000007 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-noop[main]",
+            "value": 0.28398889576154784,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.5212644399999817 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-update[main]",
+            "value": 0.22445504791788076,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.455235065000011 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout[3.60.1]",
+            "value": 0.05113672721733215,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 19.555416515999923 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-noop[3.60.1]",
+            "value": 0.29517640724001215,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.3878046329999734 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-update[3.60.1]",
+            "value": 0.249983437534837,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.000265016999947 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout[3.53.2]",
+            "value": 0.03971264903454363,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 25.180893854000033 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-noop[3.53.2]",
+            "value": 0.2164879572362725,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.619194586000049 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-update[3.53.2]",
+            "value": 0.18961660879924758,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.273799622999945 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout[3.10.0]",
+            "value": 0.010110063452358542,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 98.91134756100007 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-noop[3.10.0]",
+            "value": 0.21782976180000388,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.590740915000083 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-update[3.10.0]",
+            "value": 0.18880146352369392,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.296569112000043 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout[2.58.2]",
+            "value": 0.026082090224456966,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 38.34048542100004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-noop[2.58.2]",
+            "value": 0.21696027060451112,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.609138794000046 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_copy-checkout-update[2.58.2]",
+            "value": 0.15052077748314666,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.6436010810000425 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout[main]",
+            "value": 0.11821412230247164,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 8.459226194999985 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-noop[main]",
+            "value": 0.2900272381806986,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.447952014000009 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-update[main]",
+            "value": 0.22916109138260352,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.363742526999999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout[3.60.1]",
+            "value": 0.13259565865475129,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.541725047 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-noop[3.60.1]",
+            "value": 0.30298515915972496,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.300491690000001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-update[3.60.1]",
+            "value": 0.25874618231198565,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.8647913220000305 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout[3.53.2]",
+            "value": 0.0687464505795087,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 14.546205536000002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-noop[3.53.2]",
+            "value": 0.1767521268207823,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.657640549999996 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-update[3.53.2]",
+            "value": 0.1553249228867009,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.438116829000023 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout[3.10.0]",
+            "value": 0.06254690956452275,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 15.988000157999977 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-noop[3.10.0]",
+            "value": 0.16941923274393128,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.902517581999973 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-update[3.10.0]",
+            "value": 0.14669275404836546,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.816969293999989 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout[2.58.2]",
+            "value": 0.047937555147024795,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 20.860471439000037 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-noop[2.58.2]",
+            "value": 0.18062457374801935,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.536345245000007 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_hardlink-checkout-update[2.58.2]",
+            "value": 0.12971459073844258,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.709232972999985 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout[main]",
+            "value": 0.1223230226667113,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 8.175075944000014 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-noop[main]",
+            "value": 0.257419793541662,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.8847051589999637 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-update[main]",
+            "value": 0.19685832988159999,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.079795203999993 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout[3.60.1]",
+            "value": 0.1353356417099758,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.38903652700003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-noop[3.60.1]",
+            "value": 0.27802576216126845,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.5967889890000606 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-update[3.60.1]",
+            "value": 0.21306441145577548,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.693416386000081 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout[3.53.2]",
+            "value": 0.07976881938089847,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 12.536226657999919 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-noop[3.53.2]",
+            "value": 0.19969138315776117,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.007727345000035 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-update[3.53.2]",
+            "value": 0.1601449223403419,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.244344093999985 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout[3.10.0]",
+            "value": 0.07415690303916177,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 13.48492128199996 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-noop[3.10.0]",
+            "value": 0.19537178957619464,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.118446231000007 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-update[3.10.0]",
+            "value": 0.15764463151016112,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.343381251999972 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout[2.58.2]",
+            "value": 0.05739175553166486,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 17.42410544400002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-noop[2.58.2]",
+            "value": 0.20630503889639087,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.847191350000003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_checkout.py::test_checkout_symlink-checkout-update[2.58.2]",
+            "value": 0.1380935969317489,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.2414653700000144 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-new[main]",
+            "value": 0.1818223056803092,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.499875255999996 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-noop[main]",
+            "value": 0.36971914405749806,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.7047558020000224 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed[main]",
+            "value": 0.37388688704739664,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.674605702000008 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed-noop[main]",
+            "value": 0.3663062239796734,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.7299563440000156 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-new[3.60.1]",
+            "value": 0.20414916111257764,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.898379177999914 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-noop[3.60.1]",
+            "value": 0.4279210848047818,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.3368794749999324 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed[3.60.1]",
+            "value": 0.4164628872113307,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.401174343999969 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed-noop[3.60.1]",
+            "value": 0.42093884711176627,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.375641989000087 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-new[3.53.2]",
+            "value": 0.05187635802088897,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 19.276603797000007 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-noop[3.53.2]",
+            "value": 0.19663230401271856,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.085634352000056 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed[3.53.2]",
+            "value": 0.2057530246868487,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.860195865999913 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed-noop[3.53.2]",
+            "value": 0.20152520498228937,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.962158455999997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-new[3.10.0]",
+            "value": 0.05084248923271686,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 19.66858851900008 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-noop[3.10.0]",
+            "value": 0.20001652940598946,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.999586799000099 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed[3.10.0]",
+            "value": 0.19954580310190095,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.011380768000095 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed-noop[3.10.0]",
+            "value": 0.20020466718917865,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.994888551000031 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-new[2.58.2]",
+            "value": 0.0537589597156521,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 18.601550425999903 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-noop[2.58.2]",
+            "value": 0.23499068827073916,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.255487769999945 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed[2.58.2]",
+            "value": 0.2410834320487785,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.147941613000057 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status-data-changed-noop[2.58.2]",
+            "value": 0.2374344895123251,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.211688041000002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-new[main]",
+            "value": 0.11886905121357555,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 8.4126186740001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-noop[main]",
+            "value": 0.20405473898805204,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.9006458019999855 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed[main]",
+            "value": 0.18673055438965402,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.355309971999986 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed-noop[main]",
+            "value": 0.18596839068372467,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.377257911000015 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-new[3.60.1]",
+            "value": 0.12783409850233304,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.82263896500001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-noop[3.60.1]",
+            "value": 0.21762533570063067,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.595053221999933 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed[3.60.1]",
+            "value": 0.19585484678211282,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.105822074000002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed-noop[3.60.1]",
+            "value": 0.19244687099506538,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.196239330000026 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-new[3.53.2]",
+            "value": 0.045660051047970954,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 21.900982960999954 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-noop[3.53.2]",
+            "value": 0.142209227297251,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.031892507999942 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed[3.53.2]",
+            "value": 0.13008611764600267,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.687215347000006 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed-noop[3.53.2]",
+            "value": 0.13151866680849045,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.603483400999949 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-new[3.10.0]",
+            "value": 0.0448573748639329,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 22.29287832900002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-noop[3.10.0]",
+            "value": 0.1371421940015742,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.291701924999984 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed[3.10.0]",
+            "value": 0.13006247537998594,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.6886127000000215 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed-noop[3.10.0]",
+            "value": 0.1294381862710851,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.725695398000084 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-new[2.58.2]",
+            "value": 0.04739967862675653,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 21.097189453000055 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-noop[2.58.2]",
+            "value": 0.15757325022435947,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.346254828000042 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed[2.58.2]",
+            "value": 0.14885339431605424,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.718019461999916 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_data_status.py::test_data_status_all_flags-data-changed-noop[2.58.2]",
+            "value": 0.1479303322177341,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.759938851000015 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff[main]",
+            "value": 0.12401473801811848,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 8.063557735000018 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-noop[main]",
+            "value": 0.2263820682883236,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.417310998000005 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed[main]",
+            "value": 0.2285551488624421,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.375311625999984 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed-noop[main]",
+            "value": 0.23024343487098806,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.343229159000032 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff[3.60.1]",
+            "value": 0.14642751497235443,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.829317564999997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-noop[3.60.1]",
+            "value": 0.3079370060915832,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.2474174269999594 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed[3.60.1]",
+            "value": 0.30449083011264694,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.2841711510000096 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed-noop[3.60.1]",
+            "value": 0.3061550041281594,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.2663193039999783 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff[3.53.2]",
+            "value": 0.05133825217763496,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 19.478653004000023 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-noop[3.53.2]",
+            "value": 0.17615461338442404,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.676831170000014 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed[3.53.2]",
+            "value": 0.17513505155955225,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.709879268000009 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed-noop[3.53.2]",
+            "value": 0.17786299774228195,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.622304879000012 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff[3.10.0]",
+            "value": 0.04961518469941342,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 20.155119970999976 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-noop[3.10.0]",
+            "value": 0.20675194076170453,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.836713969000016 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed[3.10.0]",
+            "value": 0.14842549261535926,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.737387105000039 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed-noop[3.10.0]",
+            "value": 0.17134278201665554,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.836254017999977 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff[2.58.2]",
+            "value": 0.054782341337819056,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 18.254057339999974 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-noop[2.58.2]",
+            "value": 0.23874144975221864,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.188631680999947 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed[2.58.2]",
+            "value": 0.16703342599676999,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.986825654999961 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_diff.py::test_diff-diff-changed-noop[2.58.2]",
+            "value": 0.19384062324632975,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.15887734599994 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_exp_show.py::test_exp_show-exp[main]",
+            "value": 0.12200750541321534,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 8.196217081999976 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_exp_show.py::test_exp_show-exp[3.60.1]",
+            "value": 0.22645992472233056,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.415792335999981 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_exp_show.py::test_exp_show-exp[3.53.2]",
+            "value": 0.2221301444398498,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.501865348000024 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_exp_show.py::test_exp_show-exp[3.10.0]",
+            "value": 0.13372995875648114,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.477755989000002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_exp_show.py::test_exp_show-exp[2.58.2]",
+            "value": 0.8020012594066293,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.2468808350000131 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_fetch.py::test_fetch-fetch[main]",
+            "value": 0.04202185762461619,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 23.797139311000024 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_fetch.py::test_fetch-fetch[3.60.1]",
+            "value": 0.040595878517747624,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 24.633042478999982 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_fetch.py::test_fetch-fetch[3.53.2]",
+            "value": 0.02795529661127509,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 35.77139652300002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_fetch.py::test_fetch-fetch[3.10.0]",
+            "value": 0.008483701243112339,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 117.87308055100004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_fetch.py::test_fetch-fetch[2.58.2]",
+            "value": 0.008990876602407877,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 111.22385994399997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_gc.py::test_gc-gc[main]",
+            "value": 0.332550280070956,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.0070640739999703 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_gc.py::test_gc-gc[3.60.1]",
+            "value": 0.3430599038064883,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.914942809999957 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_gc.py::test_gc-gc[3.53.2]",
+            "value": 0.34579154906976356,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.891915671999982 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_gc.py::test_gc-gc[3.10.0]",
+            "value": 0.31873477958954705,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.137404714000013 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_gc.py::test_gc-gc[2.58.2]",
+            "value": 0.3565096366946918,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.8049732660000473 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get.py::test_get-get[main]",
+            "value": 0.018687381918654676,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 53.51204381399998 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get.py::test_get-get[3.60.1]",
+            "value": 0.018659395754314724,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 53.592303479000066 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get.py::test_get-get[3.53.2]",
+            "value": 0.005706187304600173,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 175.2483657859999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get.py::test_get-get[3.10.0]",
+            "value": 0.00444777355252064,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 224.83159005099992 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get.py::test_get-get[2.58.2]",
+            "value": 0.005249642458497172,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 190.48916338699996 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get_url.py::test_get_url-get-url[main]",
+            "value": 0.10746530784298881,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 9.305328575999994 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get_url.py::test_get_url-get-url[3.60.1]",
+            "value": 0.11106477598487711,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 9.003754711000028 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get_url.py::test_get_url-get-url[3.53.2]",
+            "value": 0.11148211930590628,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 8.970048346999988 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get_url.py::test_get_url-get-url[3.10.0]",
+            "value": 0.012315772456055783,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 81.19669339199999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_get_url.py::test_get_url-get-url[2.58.2]",
+            "value": 0.012992144085669248,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 76.96958973099999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_help.py::test_help---help[main]",
+            "value": 6.705059643290413,
+            "unit": "iter/sec",
+            "range": "stddev: 0.004884905718606155",
+            "extra": "mean: 149.14110436 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_help.py::test_help---help[3.60.1]",
+            "value": 6.368942399202208,
+            "unit": "iter/sec",
+            "range": "stddev: 0.002639065802928093",
+            "extra": "mean: 157.01193971 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_help.py::test_help---help[3.53.2]",
+            "value": 6.3629194720675954,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0025428938174330874",
+            "extra": "mean: 157.16056197000015 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_help.py::test_help---help[3.10.0]",
+            "value": 6.472847534750899,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0022218672897563216",
+            "extra": "mean: 154.4915116 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_help.py::test_help---help[2.58.2]",
+            "value": 6.420701418819372,
+            "unit": "iter/sec",
+            "range": "stddev: 0.002506977820191973",
+            "extra": "mean: 155.74622377999916 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_import.py::test_import-import[main]",
+            "value": 0.012569495649628972,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 79.55768694900007 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_import.py::test_import-import[3.60.1]",
+            "value": 0.012585672729034925,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 79.45542693900006 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_import.py::test_import-import[3.10.0]",
+            "value": 0.003235675869442988,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 309.05444190000003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_import.py::test_import-import[2.58.2]",
+            "value": 0.0036427292158850546,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 274.51944427800004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_import_url.py::test_import_url-import-url[main]",
+            "value": 0.02134283842960275,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 46.85412408000002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_import_url.py::test_import_url-import-url[3.60.1]",
+            "value": 0.021911286428145976,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 45.63858006600003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_import_url.py::test_import_url-import-url[3.53.2]",
+            "value": 0.008625017462602793,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 115.941794244 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_import_url.py::test_import_url-import-url[3.10.0]",
+            "value": 0.005041877144607347,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 198.33882725 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_import_url.py::test_import_url-import-url[2.58.2]",
+            "value": 0.005126362097846486,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 195.07010642499995 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_init.py::test_init-init[main]",
+            "value": 2.1794340707695063,
+            "unit": "iter/sec",
+            "range": "stddev: 0.16260512998492463",
+            "extra": "mean: 458.8347100799997 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_init.py::test_init-init[3.60.1]",
+            "value": 2.3456135212234663,
+            "unit": "iter/sec",
+            "range": "stddev: 0.13301925823829516",
+            "extra": "mean: 426.32769249999996 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_init.py::test_init-init[3.53.2]",
+            "value": 2.4649668433646945,
+            "unit": "iter/sec",
+            "range": "stddev: 0.12900793871037927",
+            "extra": "mean: 405.6849700400002 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_init.py::test_init-init[3.10.0]",
+            "value": 2.483099339257971,
+            "unit": "iter/sec",
+            "range": "stddev: 0.14622078820329928",
+            "extra": "mean: 402.72251060999906 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_init.py::test_init-init[2.58.2]",
+            "value": 3.09171303413102,
+            "unit": "iter/sec",
+            "range": "stddev: 0.030395081625442973",
+            "extra": "mean: 323.4452838799987 msec\nrounds: 100"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list[main]",
+            "value": 1.5189585684668057,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 658.345804000021 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-dvc-only[main]",
+            "value": 2.0959023988888017,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 477.12145400004147 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-recursive[main]",
+            "value": 0.3572226198506883,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.7993748000000096 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-shallow[main]",
+            "value": 2.1349202884705774,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 468.40156299998625 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list[3.60.1]",
+            "value": 1.3950788518167654,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 716.8053610000129 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-dvc-only[3.60.1]",
+            "value": 2.1514838708956936,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 464.7954899999718 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-recursive[3.60.1]",
+            "value": 0.3479088810414066,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.8743158180000137 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-shallow[3.60.1]",
+            "value": 2.1697982710556434,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 460.87233700001207 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list[3.53.2]",
+            "value": 1.4368227630198869,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 695.9800649999579 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-dvc-only[3.53.2]",
+            "value": 2.1694160232745134,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 460.953542000027 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-recursive[3.53.2]",
+            "value": 0.3507061293613728,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.851390142000014 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-shallow[3.53.2]",
+            "value": 2.271372208203367,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 440.262496999992 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list[3.10.0]",
+            "value": 0.9857814987331068,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.0144235830000525 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-dvc-only[3.10.0]",
+            "value": 2.2135183287477296,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 451.76946899994164 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-recursive[3.10.0]",
+            "value": 0.37333761807441856,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.678540687000009 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-shallow[3.10.0]",
+            "value": 2.2197614489410786,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 450.4988589999357 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list[2.58.2]",
+            "value": 1.5027954083481343,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 665.4265739999801 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-dvc-only[2.58.2]",
+            "value": 2.1634962698579074,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 462.2148019999486 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-recursive[2.58.2]",
+            "value": 0.3727979624939249,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.6824180939998996 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_ls.py::test_list-list-shallow[2.58.2]",
+            "value": 2.224978877107313,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 449.4424690000187 msec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add[main]",
+            "value": 0.2099721497329058,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.7625363709998965 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push[main]",
+            "value": 0.2842920884680824,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.5175090709999495 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add-partial[main]",
+            "value": 0.05242283475927814,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 19.0756567169999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push-partial[main]",
+            "value": 0.051309872231532196,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 19.489426820000062 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-noop[main]",
+            "value": 0.33857996669142487,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.9535120159999906 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-cloud-noop[main]",
+            "value": 0.16920971587677244,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.909826127999963 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add[3.60.1]",
+            "value": 0.2705185812500565,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.6966037429999687 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push[3.60.1]",
+            "value": 0.2988807906673727,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.3458155600000055 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add-partial[3.60.1]",
+            "value": 0.0540349874553123,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 18.50652784600004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push-partial[3.60.1]",
+            "value": 0.052700546777174076,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 18.975135195999997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-noop[3.60.1]",
+            "value": 0.26466142879184923,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.7784123080000427 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-cloud-noop[3.60.1]",
+            "value": 0.15084869708029777,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.629159013999924 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add[3.53.2]",
+            "value": 0.09829124726065931,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 10.173845869999923 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push[3.53.2]",
+            "value": 0.2907080944446175,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.439876697999921 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add-partial[3.53.2]",
+            "value": 0.0154389842011966,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 64.77110067399997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push-partial[3.53.2]",
+            "value": 0.05068936729505173,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 19.72800319600003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-noop[3.53.2]",
+            "value": 0.2736267572601097,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.654613349999977 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-cloud-noop[3.53.2]",
+            "value": 0.13623956379175128,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.340011756999957 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add[3.10.0]",
+            "value": 0.08865249671483082,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 11.27999816199997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push[3.10.0]",
+            "value": 0.1530331072407265,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.534533722999981 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add-partial[3.10.0]",
+            "value": 0.013700694872805718,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 72.988998681 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push-partial[3.10.0]",
+            "value": 0.026600992925872764,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 37.59258170500004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-noop[3.10.0]",
+            "value": 0.26864494894316837,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.722385266999936 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-cloud-noop[3.10.0]",
+            "value": 0.17015212316150882,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.877093870000067 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add[2.58.2]",
+            "value": 0.09169127263783056,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 10.906163381000056 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push[2.58.2]",
+            "value": 0.07424752688402286,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 13.468462074999934 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-add-partial[2.58.2]",
+            "value": 0.013716343277075601,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 72.90572857500001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-push-partial[2.58.2]",
+            "value": 0.012593067668934154,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 79.40876887900004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-noop[2.58.2]",
+            "value": 0.3935226773335472,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.541149615000222 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_add-gc-cloud-noop[2.58.2]",
+            "value": 0.22206491617299726,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.503187703999856 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add[main]",
+            "value": 0.0481909346776152,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 20.750790717999962 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push[main]",
+            "value": 0.03296711520658116,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 30.33325766400003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add-update[main]",
+            "value": 0.33107119679168556,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.0204983389999143 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push-update[main]",
+            "value": 0.1715821531922146,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.828111964999948 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc[main]",
+            "value": 0.47510261495514083,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.1048084530000324 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc-cloud[main]",
+            "value": 0.1678907372978002,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.9562547409999524 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add[3.60.1]",
+            "value": 0.058101381118739276,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 17.2112948219999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push[3.60.1]",
+            "value": 0.0556573770565858,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 17.96707018699999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add-update[3.60.1]",
+            "value": 0.3403490562061151,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.938160049999965 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push-update[3.60.1]",
+            "value": 0.15377252091543478,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.5031124810000165 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc[3.60.1]",
+            "value": 0.33823707539843545,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.956506169000022 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc-cloud[3.60.1]",
+            "value": 0.14167977132767004,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.058170624000013 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add[3.53.2]",
+            "value": 0.012085292703948158,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 82.74520315699999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push[3.53.2]",
+            "value": 0.05375411279631137,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 18.603227696999966 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add-update[3.53.2]",
+            "value": 0.023735549407486282,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 42.13089753400004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push-update[3.53.2]",
+            "value": 0.17128644540426402,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.838173578999999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc[3.53.2]",
+            "value": 0.3716998491826047,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.6903427649999685 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc-cloud[3.53.2]",
+            "value": 0.14797441763221433,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.757924890000027 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add[3.10.0]",
+            "value": 0.009899262043936432,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 101.01763096699995 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push[3.10.0]",
+            "value": 0.028790035872505188,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 34.73423945799982 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add-update[3.10.0]",
+            "value": 0.022146868658661868,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 45.15311014900021 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push-update[3.10.0]",
+            "value": 0.32867705316831747,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.0425001999999495 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc[3.10.0]",
+            "value": 0.35098417776278856,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.849131280999927 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc-cloud[3.10.0]",
+            "value": 0.15149886221976175,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.600709637999898 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add[2.58.2]",
+            "value": 0.010399426209420944,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 96.15915146299994 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push[2.58.2]",
+            "value": 0.013385750824328847,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 74.70630621500004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-add-update[2.58.2]",
+            "value": 0.022447932756543987,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 44.547531875000004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-push-update[2.58.2]",
+            "value": 0.3296284864853724,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.0337183859999186 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc[2.58.2]",
+            "value": 0.46358198527561956,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.157115746000045 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/test_modify_data.py::test_partial_remove-gc-cloud[2.58.2]",
+            "value": 0.16923524681006563,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.90893456799995 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show[main]",
+            "value": 1.5144674101824116,
+            "unit": "iter/sec",
+            "range": "stddev: 0.01267842841488348",
+            "extra": "mean: 660.2981307333342 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show-json[main]",
+            "value": 1.436253308729061,
+            "unit": "iter/sec",
+            "range": "stddev: 0.020296624077473315",
+            "extra": "mean: 696.2560113333344 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff[main]",
+            "value": 1.2344357611347172,
+            "unit": "iter/sec",
+            "range": "stddev: 0.06937357972103352",
+            "extra": "mean: 810.0867063999999 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff-json[main]",
+            "value": 1.169600175903876,
+            "unit": "iter/sec",
+            "range": "stddev: 0.02723491722486011",
+            "extra": "mean: 854.9930314666653 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show[3.60.1]",
+            "value": 1.501743157079683,
+            "unit": "iter/sec",
+            "range": "stddev: 0.020042432409710327",
+            "extra": "mean: 665.8928294666699 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show-json[3.60.1]",
+            "value": 1.4340279654824084,
+            "unit": "iter/sec",
+            "range": "stddev: 0.032481213937182785",
+            "extra": "mean: 697.3364704666684 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff[3.60.1]",
+            "value": 1.3131663375324598,
+            "unit": "iter/sec",
+            "range": "stddev: 0.015899435099942832",
+            "extra": "mean: 761.5181500000043 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff-json[3.60.1]",
+            "value": 1.2054230858284114,
+            "unit": "iter/sec",
+            "range": "stddev: 0.028291597479234012",
+            "extra": "mean: 829.5842445333316 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show[3.53.2]",
+            "value": 1.5479359281382223,
+            "unit": "iter/sec",
+            "range": "stddev: 0.01821254549127043",
+            "extra": "mean: 646.0215709333321 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show-json[3.53.2]",
+            "value": 1.4756159314722512,
+            "unit": "iter/sec",
+            "range": "stddev: 0.011998269316286692",
+            "extra": "mean: 677.6831143333349 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff[3.53.2]",
+            "value": 1.3263045444382973,
+            "unit": "iter/sec",
+            "range": "stddev: 0.017104799314561853",
+            "extra": "mean: 753.9746464666678 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff-json[3.53.2]",
+            "value": 1.1950108771017356,
+            "unit": "iter/sec",
+            "range": "stddev: 0.021377773955045958",
+            "extra": "mean: 836.8124668666647 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show[3.10.0]",
+            "value": 1.561203907055654,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0043558725189546035",
+            "extra": "mean: 640.531320400002 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show-json[3.10.0]",
+            "value": 1.348770712258845,
+            "unit": "iter/sec",
+            "range": "stddev: 0.006759474946436642",
+            "extra": "mean: 741.4158618000064 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff[3.10.0]",
+            "value": 1.2150233482604522,
+            "unit": "iter/sec",
+            "range": "stddev: 0.030922460530941897",
+            "extra": "mean: 823.0294516000034 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff-json[3.10.0]",
+            "value": 0.9957537620253696,
+            "unit": "iter/sec",
+            "range": "stddev: 0.04661475122201684",
+            "extra": "mean: 1.0042643454000049 sec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show[2.58.2]",
+            "value": 2.851259380625354,
+            "unit": "iter/sec",
+            "range": "stddev: 0.005652912496052851",
+            "extra": "mean: 350.7222130666605 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-show-json[2.58.2]",
+            "value": 2.765269403732691,
+            "unit": "iter/sec",
+            "range": "stddev: 0.007916270631956948",
+            "extra": "mean: 361.6284180666639 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff[2.58.2]",
+            "value": 2.336800079433871,
+            "unit": "iter/sec",
+            "range": "stddev: 0.012176653848660303",
+            "extra": "mean: 427.93562393333485 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_plots.py::test_plots-plots-diff-json[2.58.2]",
+            "value": 2.200122681862226,
+            "unit": "iter/sec",
+            "range": "stddev: 0.022816834346251955",
+            "extra": "mean: 454.5201084666701 msec\nrounds: 5"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_push.py::test_push-push[main]",
+            "value": 0.045833856318068224,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 21.81793286299998 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_push.py::test_push-push[3.60.1]",
+            "value": 0.04548408257380876,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 21.985713318000023 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_push.py::test_push-push[3.53.2]",
+            "value": 0.044243639021626265,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 22.602119131999984 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_push.py::test_push-push[3.10.0]",
+            "value": 0.02278075312411638,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 43.896705019000024 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_push.py::test_push-push[2.58.2]",
+            "value": 0.010719188990915118,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 93.29063988400003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push[main]",
+            "value": 0.04458360023389208,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 22.429772264999997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push-noop[main]",
+            "value": 0.1678286076686568,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.95845972799998 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch[main]",
+            "value": 0.04393787899008577,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 22.759405391999962 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch-noop[main]",
+            "value": 0.16789632426288228,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.956056538999974 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push[3.60.1]",
+            "value": 0.04470784881894029,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 22.367437182000003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push-noop[3.60.1]",
+            "value": 0.1634614488925232,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.117650411 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch[3.60.1]",
+            "value": 0.044240643089331955,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 22.60364972499997 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch-noop[3.60.1]",
+            "value": 0.17065007762244888,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.859944595000002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push[3.53.2]",
+            "value": 0.043885043823195316,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 22.786806458 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push-noop[3.53.2]",
+            "value": 0.1626895052259173,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.146677984000007 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch[3.53.2]",
+            "value": 0.03078075709064385,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 32.487829881999915 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch-noop[3.53.2]",
+            "value": 0.17287937128932598,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.784380129000056 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push[3.10.0]",
+            "value": 0.021475221826381275,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 46.56529315900002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push-noop[3.10.0]",
+            "value": 0.49801128382114357,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.0079866309999943 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch[3.10.0]",
+            "value": 0.008691797267046726,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 115.05100375400002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch-noop[3.10.0]",
+            "value": 0.27630120930246105,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 3.6192385929998636 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push[2.58.2]",
+            "value": 0.010106715939781503,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 98.9441086459999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-push-noop[2.58.2]",
+            "value": 0.49261734047263944,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.0299732020000647 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch[2.58.2]",
+            "value": 0.009108880938837507,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 109.7829696880001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/stories/use_cases/test_sharing.py::test_sharing-fetch-noop[2.58.2]",
+            "value": 0.8020157646078374,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 1.2468582840001545 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc_azure/tests/benchmarks.py::test_sharing_azure-push[main]",
+            "value": 0.0037484632142960506,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 266.775994009 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc_azure/tests/benchmarks.py::test_sharing_azure-push-noop[main]",
+            "value": 0.14217768957147287,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.033452315999966 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc_azure/tests/benchmarks.py::test_sharing_azure-fetch[main]",
+            "value": 0.003810654312041596,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 262.42212442100003 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc_azure/tests/benchmarks.py::test_sharing_azure-fetch-noop[main]",
+            "value": 0.17146289247970758,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.832165697999926 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc_azure/tests/benchmarks.py::test_sharing_azure-push[3.53.2]",
+            "value": 0.003764394707884968,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 265.6469572399999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc_azure/tests/benchmarks.py::test_sharing_azure-push-noop[3.53.2]",
+            "value": 0.1536179842978011,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 6.509654482000087 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc_azure/tests/benchmarks.py::test_sharing_azure-fetch[3.53.2]",
+            "value": 0.003671558653571892,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 272.3638907489999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc_azure/tests/benchmarks.py::test_sharing_azure-fetch-noop[3.53.2]",
+            "value": 0.17263516055052605,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.792562748000137 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status[main]",
+            "value": 0.19080416342560785,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.240975784000057 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-noop[main]",
+            "value": 0.3790110942134003,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.638445193999928 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed[main]",
+            "value": 0.36053350115004446,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.7736673480000036 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed-noop[main]",
+            "value": 0.37331466162721566,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.6787054000000126 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status[3.60.1]",
+            "value": 0.19200288868192214,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.208254974000056 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-noop[3.60.1]",
+            "value": 0.39941006877219887,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.503692516000001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed[3.60.1]",
+            "value": 0.38695400364435484,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.58428648000006 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed-noop[3.60.1]",
+            "value": 0.40117583707117926,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 2.492672557999981 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status[3.53.2]",
+            "value": 0.05496162202376185,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 18.19451397499995 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-noop[3.53.2]",
+            "value": 0.1977317070396581,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.057357846000059 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed[3.53.2]",
+            "value": 0.1964255223958636,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.090988114999959 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed-noop[3.53.2]",
+            "value": 0.19840735637336307,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.040135699999951 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status[3.10.0]",
+            "value": 0.049223419365479436,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 20.31553298999995 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-noop[3.10.0]",
+            "value": 0.1947633529720245,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.134436148999953 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed[3.10.0]",
+            "value": 0.19314802035984519,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.177376387999971 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed-noop[3.10.0]",
+            "value": 0.19384692885094396,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.1587095340000815 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status[2.58.2]",
+            "value": 0.05020741453376666,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 19.917376931000035 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-noop[2.58.2]",
+            "value": 0.2027769104750212,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.931527942000002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed[2.58.2]",
+            "value": 0.20525424458116578,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 4.872006433000024 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_status.py::test_status-status-changed-noop[2.58.2]",
+            "value": 0.19638054728813453,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 5.092154053999934 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-import-url[main]",
+            "value": 0.02319948869449772,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 43.10439825500001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update[main]",
+            "value": 0.029226670503855707,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 34.21532397500002 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update-noop[main]",
+            "value": 0.12130147915975929,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 8.243922554999983 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-import-url[3.60.1]",
+            "value": 0.023979208575710495,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 41.702794186999995 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update[3.60.1]",
+            "value": 0.030174455279431463,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 33.14061482599999 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update-noop[3.60.1]",
+            "value": 0.13179117742972232,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 7.587761332000014 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-import-url[3.53.2]",
+            "value": 0.00984668059007219,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 101.55706695799995 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update[3.53.2]",
+            "value": 0.01077652018280811,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 92.79433277500004 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update-noop[3.53.2]",
+            "value": 0.07953372519454958,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 12.573282561000042 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-import-url[3.10.0]",
+            "value": 0.0054521228317197,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 183.41479656 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update[3.10.0]",
+            "value": 0.005917510463100583,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 168.98998425699995 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update-noop[3.10.0]",
+            "value": 0.07646328279382279,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 13.078172470000027 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-import-url[2.58.2]",
+            "value": 0.005516676792502368,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 181.26854945700006 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update[2.58.2]",
+            "value": 0.005822506300169168,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 171.7473452920001 sec\nrounds: 1"
+          },
+          {
+            "name": "dvc/testing/benchmarks/cli/commands/test_update.py::test_update-update-noop[2.58.2]",
+            "value": 0.07928824356980982,
+            "unit": "iter/sec",
+            "range": "stddev: 0",
+            "extra": "mean: 12.612210272000084 sec\nrounds: 1"
           }
         ]
       }
