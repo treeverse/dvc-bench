@@ -572,42 +572,21 @@ jobs:
           pattern: all-benchmarks
           path: .benchmarks
 
-      - name: generate report.md
+      - name: generate job summary
         shell: bash
         run: |
-          echo '```' > report.md
+          tmpdir=$(mktemp -d)
+          trap 'rm -rf "$tmpdir"' EXIT
           for file in $(find .benchmarks -type f -name '*.json' | sort); do
-            pytest-benchmark compare "$file" --group-by func --sort name 2>/dev/null | \
-              sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" >> report.md || true
+            name=$(basename "$file" .json | sed -E 's/^[0-9]+_//')
+            csv="$tmpdir/results.csv"
+            pytest-benchmark compare "$file" --group-by func --sort name --csv "$csv" >/dev/null
+            {
+              echo "<details><summary>$name</summary>"
+              echo
+              tabulate -1 -s , -F .4f -f pipe "$csv"
+              echo
+              echo "</details>"
+              echo
+            } >> "$GITHUB_STEP_SUMMARY"
           done
-          echo '```' >> report.md
-
-      - name: merge benchmark results
-        run: |
-          python -c "
-          import json, glob
-          files = sorted(glob.glob('.benchmarks/**/*.json', recursive=True))
-          merged = None
-          for f in files:
-              with open(f) as fh:
-                  data = json.load(fh)
-              if merged is None:
-                  merged = data
-              else:
-                  merged['benchmarks'].extend(data['benchmarks'])
-          with open('output.json', 'w') as fh:
-              json.dump(merged, fh)
-          print(f'Merged {len(files)} files, {len(merged[\"benchmarks\"])} benchmarks')
-          "
-
-      - name: Store benchmark result
-        uses: benchmark-action/github-action-benchmark@v1
-        with:
-          tool: 'pytest'
-          output-file-path: output.json
-          gh-pages-branch: gh-pages
-          benchmark-data-dir-path: dev/bench
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          auto-push: ${{ github.event_name == 'schedule' }}
-          comment-on-alert: true
-          alert-threshold: '150%'
