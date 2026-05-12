@@ -573,20 +573,4 @@ jobs:
           path: .benchmarks
 
       - name: generate job summary
-        shell: bash
-        run: |
-          tmpdir=$(mktemp -d)
-          trap 'rm -rf "$tmpdir"' EXIT
-          for file in $(find .benchmarks -type f -name '*.json' | sort); do
-            name=$(basename "$file" .json | sed -E 's/^[0-9]+_//')
-            csv="$tmpdir/results.csv"
-            pytest-benchmark compare "$file" --group-by func --sort name --csv "$csv" >/dev/null
-            {
-              echo "<details><summary>$name</summary>"
-              echo
-              tabulate -1 -s , -F .4f -f pipe "$csv"
-              echo
-              echo "</details>"
-              echo
-            } >> "$GITHUB_STEP_SUMMARY"
-          done
+        run: python scripts/ci/job_summary.py .benchmarks >> "$GITHUB_STEP_SUMMARY"
