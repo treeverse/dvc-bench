@@ -1,13 +1,9 @@
 ## dvc-bench
 Benchmarking [dvc](https://github.com/treeverse/dvc) with pytest-benchmark.
 
-### Daily benchmark results
+### Viewing results
 
-Visit https://treeverse.github.io/dvc-bench/.
-
-### Dispatch workflow
-
-Trigger a [dispatch workflow](https://github.com/treeverse/dvc-bench/actions/workflows/build.yml) with desired dataset and revisions and see results in [bench.dvc.org/run_ID_ATTEMPT.html](https://treeverse.github.io/dvc-bench/), where `ID` is `github.run_id` and `ATTEMPT` is `github.run_attempt`. For example, for https://github.com/iterative/dvc-bench/actions/runs/7119039172/attempts/2 it would be http://bench.dvc.org/run_7119039172_2.html
+Results are rendered as a Markdown summary on each [workflow run](https://github.com/treeverse/dvc-bench/actions/workflows/build.yml).
 
 ### Setting up
 ```
