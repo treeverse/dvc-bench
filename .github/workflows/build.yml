@@ -85,7 +85,7 @@ jobs:
         with:
           path: wheelhouse
           key: ${{ runner.os }}-wheels-v1
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - if: steps.cache-wheels.outputs.cache-hit != 'true'
         run: |
           ./scripts/ci/install-libgit2.sh 1.7.2
@@ -97,7 +97,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v6
         with:
             python-version: "3.14"
@@ -120,26 +120,26 @@ jobs:
       - uses: actions/setup-python@v6
         with:
             python-version: "3.14"
-      - uses: actions/checkout@v6
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_REPOSITORY }}
           ref: ${{ env.DVC_REF }}
           path: dvc
           fetch-depth: 0
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_AZURE_REPOSITORY }}
           ref: ${{ env.DVC_AZURE_REF }}
           path: dvc-azure
           fetch-depth: 0
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_GS_REPOSITORY }}
           ref: ${{ env.DVC_GS_REF }}
           path: dvc-gs
           fetch-depth: 0
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_S3_REPOSITORY }}
           ref: ${{ env.DVC_S3_REF }}
@@ -184,10 +184,10 @@ jobs:
       - uses: actions/setup-python@v6
         with:
             python-version: "3.14"
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           path: dvc-bench
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_REPOSITORY }}
           ref: ${{ env.DVC_REF }}
@@ -266,10 +266,10 @@ jobs:
       - uses: actions/setup-python@v6
         with:
             python-version: "3.14"
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           path: dvc-bench
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_REPOSITORY }}
           ref: ${{ env.DVC_REF }}
@@ -277,7 +277,7 @@ jobs:
           fetch-depth: 0
       - run: ../dvc-bench/scripts/ci/fetch-all-revs.sh "${REVS}"
         working-directory: dvc
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_S3_REPOSITORY }}
           ref: ${{ env.DVC_S3_REF }}
@@ -350,10 +350,10 @@ jobs:
       - uses: actions/setup-python@v6
         with:
             python-version: "3.14"
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           path: dvc-bench
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_REPOSITORY }}
           ref: ${{ env.DVC_REF }}
@@ -361,7 +361,7 @@ jobs:
           fetch-depth: 0
       - run: ../dvc-bench/scripts/ci/fetch-all-revs.sh "${REVS}"
         working-directory: dvc
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_AZURE_REPOSITORY }}
           ref: ${{ env.DVC_AZURE_REF }}
@@ -448,10 +448,10 @@ jobs:
       - uses: actions/setup-python@v6
         with:
             python-version: "3.14"
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           path: dvc-bench
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_REPOSITORY }}
           ref: ${{ env.DVC_REF }}
@@ -459,7 +459,7 @@ jobs:
           fetch-depth: 0
       - run: ../dvc-bench/scripts/ci/fetch-all-revs.sh "${REVS}"
         working-directory: dvc
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.DVC_GS_REPOSITORY }}
           ref: ${{ env.DVC_GS_REF }}
@@ -559,7 +559,7 @@ jobs:
       - uses: actions/setup-python@v6
         with:
             python-version: "3.14"
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v7
         with:
           enable-cache: true
