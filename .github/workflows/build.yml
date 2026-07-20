@@ -76,7 +76,7 @@ jobs:
   build-wheels:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.14"
       - name: Cache Wheels
@@ -98,7 +98,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
             python-version: "3.14"
       - uses: astral-sh/setup-uv@v7
@@ -117,7 +117,7 @@ jobs:
       gs-tests: ${{ steps.gs-tests.outputs.gs-tests }}
       s3-tests: ${{ steps.s3-tests.outputs.s3-tests }}
     steps:
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
             python-version: "3.14"
       - uses: actions/checkout@v6
@@ -181,7 +181,7 @@ jobs:
         os: [ubuntu-latest]
         test: ${{fromJson(needs.gen.outputs.tests)}}
     steps:
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
             python-version: "3.14"
       - uses: actions/checkout@v6
@@ -263,7 +263,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::977611293394:role/dvc-bench-gha
           aws-region: us-east-2
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
             python-version: "3.14"
       - uses: actions/checkout@v6
@@ -347,7 +347,7 @@ jobs:
       id-token: write
     environment: ${{ github.event_name == 'schedule' && 'github-actions' || ''}}
     steps:
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
             python-version: "3.14"
       - uses: actions/checkout@v6
@@ -445,7 +445,7 @@ jobs:
       id-token: write
     environment: google-cloud
     steps:
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
             python-version: "3.14"
       - uses: actions/checkout@v6
@@ -556,7 +556,7 @@ jobs:
            pattern: .benchmarks-*
            delete-merged: true
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
             python-version: "3.14"
       - uses: actions/checkout@v6
